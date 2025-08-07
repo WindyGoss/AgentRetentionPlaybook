@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Real Estate Agent Retention Blueprint</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #003f5c, #bc5090);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold gradient-text">The Agent Retention Blueprint</h1>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">Navigating the challenges of today's market to build a stable, productive, and loyal real estate team for 2025 and beyond.</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <section id="problem" class="mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">Why Good Agents Leave: The Three Core Struggles</h2>
+                <p class="mt-2 text-gray-600 max-w-2xl mx-auto">High turnover isn't random; it's a direct result of interconnected challenges that impact an agent's stability, growth, and well-being.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col">
+                    <h3 class="text-xl font-bold text-center mb-4 text-[#003f5c]">1. Financial Instability</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">The promise of large commissions often clashes with the reality of inconsistent income, especially for new agents. This "survival gap" is the leading cause of early-career attrition.</p>
+                    <div class="chart-container">
+                        <canvas id="incomeGapChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col">
+                    <h3 class="text-xl font-bold text-center mb-4 text-[#58508d]">2. Inadequate Support & Training</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">A significant leadership gap exists in coaching and development. Without structured training and mentorship, agents feel overwhelmed, under-equipped, and are more likely to stagnate.</p>
+                    <div class="chart-container">
+                        <canvas id="mentorshipImpactChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col">
+                    <h3 class="text-xl font-bold text-center mb-4 text-[#bc5090]">3. Suboptimal Team Culture</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">Poor communication, a lack of recognition, and unrealistic expectations erode loyalty. Burnout becomes inevitable when work-life balance is ignored, leading to disengagement.</p>
+                    <div class="mt-4 flex flex-col items-center justify-center flex-grow space-y-2">
+                        <div class="w-full text-center bg-red-100 text-red-800 p-3 rounded-md shadow">Poor Communication & No Recognition</div>
+                        <div class="text-2xl text-red-500 font-bold">&darr;</div>
+                        <div class="w-full text-center bg-red-100 text-red-800 p-3 rounded-md shadow">Disengagement & Burnout</div>
+                        <div class="text-2xl text-red-500 font-bold">&darr;</div>
+                        <div class="w-full text-center bg-red-200 text-red-900 p-3 rounded-md shadow-lg font-bold">Agent Attrition</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="solution" class="mb-16 bg-white rounded-lg shadow-lg p-8 md:p-12">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">The 3-Pillar Solution Framework</h2>
+                <p class="mt-2 text-gray-600 max-w-2xl mx-auto">Address the root causes of attrition with an integrated system designed to empower agents, streamline operations, and build a thriving team culture.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-6 border-l-4 border-[#ff6361] bg-gray-50 rounded-r-lg">
+                    <div class="text-5xl mb-4">👤</div>
+                    <h3 class="text-2xl font-bold mb-2 text-[#003f5c]">Personalized Support</h3>
+                    <p class="text-gray-600">One-on-one coaching and mentorship to tackle individual challenges, build skills, and foster a sense of belonging and value.</p>
+                </div>
+                <div class="p-6 border-l-4 border-[#ffa600] bg-gray-50 rounded-r-lg">
+                    <div class="text-5xl mb-4">📖</div>
+                    <h3 class="text-2xl font-bold mb-2 text-[#58508d]">Exact Playbooks</h3>
+                    <p class="text-gray-600">Proven, replicable systems for lead generation and operations that eliminate guesswork and provide a clear path to success.</p>
+                </div>
+                <div class="p-6 border-l-4 border-[#bc5090] bg-gray-50 rounded-r-lg">
+                    <div class="text-5xl mb-4">⚙️</div>
+                    <h3 class="text-2xl font-bold mb-2 text-[#bc5090]">Built Systems</h3>
+                    <p class="text-gray-600">Integrated technology (CRM, automation) to streamline workflows, reduce burnout, and provide data-driven insights for growth.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="impact" class="mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">Visualizing the Impact: From Surviving to Thriving</h2>
+                <p class="mt-2 text-gray-600 max-w-2xl mx-auto">Implementing this framework transforms agent productivity, satisfaction, and ultimately, your team's bottom line.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold text-center mb-4">Agent Time Reclaimed</h3>
+                    <p class="text-gray-600 mb-4 text-center">By automating administrative tasks and streamlining workflows, agents shift their focus from busywork to high-value, revenue-generating activities.</p>
+                    <div class="chart-container h-80 md:h-96">
+                        <canvas id="timeAllocationChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col justify-center items-center text-center">
+                     <h3 class="text-xl font-bold mb-4">Boosted Client Retention</h3>
+                     <p class="text-gray-600 mb-6">Formal retention systems like a well-managed CRM give agents the tools to build lasting relationships, leading to more repeat and referral business.</p>
+                    <div class="bg-gradient-to-r from-[#ff6361] to-[#ffa600] p-8 rounded-full w-48 h-48 flex items-center justify-center shadow-2xl">
+                        <div class="text-center">
+                            <span class="text-6xl font-black text-white">84%</span>
+                            <span class="block text-white font-semibold mt-1">Client Retention</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gemini-feature" class="mb-16 bg-[#003f5c] rounded-lg shadow-lg p-8 md:p-12 text-white">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold mb-2">✨ Your AI Coaching Assistant ✨</h2>
+                <p class="text-gray-200 max-w-2xl mx-auto">Leverage the power of AI to get instant, actionable conversation starters for your coaching sessions. Describe your agent's current struggle, and get three personalized prompts to guide your discussion.</p>
+            </div>
+            <div class="max-w-2xl mx-auto">
+                <label for="agentStruggle" class="block text-gray-200 font-semibold mb-2">Describe the agent's struggle:</label>
+                <textarea id="agentStruggle" rows="4" class="w-full p-4 rounded-lg text-gray-800 bg-white focus:outline-none focus:ring-2 focus:ring-[#ffa600] mb-4" placeholder="e.g., 'Agent is struggling with consistent lead follow-up after open houses.'"></textarea>
+                <div class="flex justify-center">
+                    <button id="generateBtn" class="bg-[#bc5090] hover:bg-[#58508d] text-white font-bold py-3 px-6 rounded-full shadow-lg transition-colors duration-300">
+                        Generate Coaching Starters ✨
+                    </button>
+                </div>
+                <div id="loadingIndicator" class="text-center mt-4 hidden">
+                    <div class="animate-pulse">Generating your coaching starters...</div>
+                </div>
+                <div id="results" class="bg-white text-gray-800 p-6 rounded-lg mt-6 shadow-md hidden">
+                    <h3 class="text-xl font-bold mb-2">Conversation Starters</h3>
+                    <ul class="list-disc list-inside space-y-2" id="startersList"></ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-16">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p class="font-bold text-xl">Ready to build an unstoppable team?</p>
+            <p class="mt-2">Invest in a system that empowers your agents and secures your team's future.</p>
+        </div>
+    </footer>
+
+    <script>
+        const tooltipCallback = {
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                              return label.join(' ');
+                            } else {
+                              return label;
+                            }
+                        }
+                    }
+                }
+            }
+        };
+
+        const wrapLabel = (label) => {
+            const maxLength = 16;
+            if (label.length <= maxLength) return label;
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+            words.forEach(word => {
+                if ((currentLine + word).length > maxLength) {
+                    lines.push(currentLine.trim());
+                    currentLine = '';
+                }
+                currentLine += word + ' ';
+            });
+            lines.push(currentLine.trim());
+            return lines;
+        };
+
+        const incomeData = {
+            labels: ['New Agent (≤ 2 Yrs)', 'Veteran Agent (16+ Yrs)'],
+            datasets: [{
+                label: 'Median Gross Income (2024)',
+                data: [8100, 78900],
+                backgroundColor: ['#ff6361', '#003f5c'],
+                borderColor: ['#ff6361', '#003f5c'],
+                borderWidth: 1
+            }]
+        };
+
+        new Chart(document.getElementById('incomeGapChart'), {
+            type: 'bar',
+            data: incomeData,
+            options: {
+                ...tooltipCallback,
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        ticks: {
+                            callback: function(value) {
+                                return '$' + value.toLocaleString();
+                            }
+                        }
+                    }
+                },
+                plugins: {
+                    ...tooltipCallback.plugins,
+                    legend: {
+                        display: false
+                    },
+                    title: {
+                        display: true,
+                        text: 'The Income Gap: Experience vs. Earnings'
+                    }
+                }
+            }
+        });
+
+        const mentorshipData = {
+            labels: ['Successful New Agents w/ Mentor', 'Long-Term Agents w/ Mentor'],
+            datasets: [{
+                label: '% Who Had a Mentor',
+                data: [68, 60],
+                backgroundColor: ['#58508d', '#ffa600'],
+                hoverOffset: 4
+            }]
+        };
+
+        new Chart(document.getElementById('mentorshipImpactChart'), {
+            type: 'doughnut',
+            data: mentorshipData,
+            options: {
+                ...tooltipCallback,
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    ...tooltipCallback.plugins,
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'The Critical Role of Mentorship'
+                    }
+                }
+            }
+        });
+
+        const timeAllocationData = {
+            labels: ['Before Solution', 'After Solution'],
+            datasets: [
+                {
+                    label: 'Admin & Busywork',
+                    data: [60, 20],
+                    backgroundColor: '#ff6361',
+                },
+                {
+                    label: 'Sales & Client-Facing',
+                    data: [40, 80],
+                    backgroundColor: '#003f5c',
+                }
+            ]
+        };
+
+        new Chart(document.getElementById('timeAllocationChart'), {
+            type: 'bar',
+            data: timeAllocationData,
+            options: {
+                ...tooltipCallback,
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    ...tooltipCallback.plugins,
+                    title: {
+                        display: true,
+                        text: 'Agent Time Allocation (%)'
+                    },
+                },
+                scales: {
+                    x: {
+                        stacked: true,
+                    },
+                    y: {
+                        stacked: true,
+                        max: 100
+                    }
+                }
+            }
+        });
+
+        document.getElementById('generateBtn').addEventListener('click', generateCoachingStarters);
+
+        async function generateCoachingStarters() {
+            const agentStruggle = document.getElementById('agentStruggle').value;
+            const loadingIndicator = document.getElementById('loadingIndicator');
+            const resultsDiv = document.getElementById('results');
+            const startersList = document.getElementById('startersList');
+
+            if (!agentStruggle.trim()) {
+                alert('Please describe the agent\'s struggle.');
+                return;
+            }
+
+            loadingIndicator.classList.remove('hidden');
+            resultsDiv.classList.add('hidden');
+            startersList.innerHTML = '';
+
+            const prompt = `Act as a supportive real estate team leader. I need to have a coaching session with an agent who is struggling with the following: "${agentStruggle}". Generate three different, supportive, and actionable conversation starters that I can use to open the discussion. Do not provide an introduction or conclusion, just the three conversation starters as a numbered list.`;
+
+            let chatHistory = [];
+            chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+
+            const payload = { contents: chatHistory };
+            const apiKey = ""
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    throw new Error(`API call failed with status: ${response.status}`);
+                }
+
+                const result = await response.json();
+                let text = '';
+                if (result.candidates && result.candidates.length > 0 &&
+                    result.candidates[0].content && result.candidates[0].content.parts &&
+                    result.candidates[0].content.parts.length > 0) {
+                    text = result.candidates[0].content.parts[0].text;
+                } else {
+                    throw new Error("Invalid API response format");
+                }
+
+                const starters = text.split('\n').filter(line => line.trim() !== '');
+                starters.forEach(starter => {
+                    const li = document.createElement('li');
+                    li.textContent = starter.replace(/^\d+\.\s*/, '');
+                    startersList.appendChild(li);
+                });
+
+                resultsDiv.classList.remove('hidden');
+
+            } catch (error) {
+                console.error('Error generating coaching starters:', error);
+                resultsDiv.innerHTML = `<p class="text-red-500">Sorry, there was an error generating the starters. Please try again.</p>`;
+                resultsDiv.classList.remove('hidden');
+            } finally {
+                loadingIndicator.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
+Add initial infographic HTML file
